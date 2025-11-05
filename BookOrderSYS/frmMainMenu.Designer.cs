@@ -80,14 +80,14 @@
             // mnuRegisterCustomer
             // 
             this.mnuRegisterCustomer.Name = "mnuRegisterCustomer";
-            this.mnuRegisterCustomer.Size = new System.Drawing.Size(180, 22);
+            this.mnuRegisterCustomer.Size = new System.Drawing.Size(172, 22);
             this.mnuRegisterCustomer.Text = "Register Customer";
             this.mnuRegisterCustomer.Click += new System.EventHandler(this.addCusToolStripMenuItem_Click);
             // 
             // mnuUpdateCustomer
             // 
             this.mnuUpdateCustomer.Name = "mnuUpdateCustomer";
-            this.mnuUpdateCustomer.Size = new System.Drawing.Size(180, 22);
+            this.mnuUpdateCustomer.Size = new System.Drawing.Size(172, 22);
             this.mnuUpdateCustomer.Text = "Update Customer";
             this.mnuUpdateCustomer.Click += new System.EventHandler(this.updateCustomerToolStripMenuItem_Click);
             // 
@@ -171,12 +171,14 @@
             this.mnuAdmin.Name = "mnuAdmin";
             this.mnuAdmin.Size = new System.Drawing.Size(47, 20);
             this.mnuAdmin.Text = "Admin";
+            this.mnuAdmin.Click += new System.EventHandler(this.mnuAdmin_Click);
             // 
             // listBestsellersToolStripMenuItem
             // 
             this.listBestsellersToolStripMenuItem.Name = "listBestsellersToolStripMenuItem";
             this.listBestsellersToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
             this.listBestsellersToolStripMenuItem.Text = "Show Yearly Revenue Analysis";
+            this.listBestsellersToolStripMenuItem.Click += new System.EventHandler(this.listBestsellersToolStripMenuItem_Click);
             // 
             // listBestsellersToolStripMenuItem1
             // 

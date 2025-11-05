@@ -59,5 +59,17 @@ namespace BookOrderSYS
             nextForm.Show();
             this.Hide();
         }
+
+        private void mnuAdmin_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBestsellersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmYearlyRevenueAnalysis nextForm = new frmYearlyRevenueAnalysis(this);
+            nextForm.Show();
+            this.Hide();
+        }
     }
 }
