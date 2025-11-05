@@ -19,6 +19,8 @@ namespace BookOrderSYS
 
         private void frmMainMenu_Load(object sender, EventArgs e)
         {
+            lblBooktopia.Parent = pictureBox1;
+            lblBooktopia.BackColor = Color.Transparent;
         }
 
         private void addCusToolStripMenuItem_Click(object sender, EventArgs e)
