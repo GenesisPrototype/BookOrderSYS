@@ -106,19 +106,20 @@
             // mnuAddBook
             // 
             this.mnuAddBook.Name = "mnuAddBook";
-            this.mnuAddBook.Size = new System.Drawing.Size(136, 22);
+            this.mnuAddBook.Size = new System.Drawing.Size(180, 22);
             this.mnuAddBook.Text = "Add Book";
+            this.mnuAddBook.Click += new System.EventHandler(this.mnuAddBook_Click);
             // 
             // updateBookToolStripMenuItem
             // 
             this.updateBookToolStripMenuItem.Name = "updateBookToolStripMenuItem";
-            this.updateBookToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.updateBookToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.updateBookToolStripMenuItem.Text = "Update Book";
             // 
             // removeBookToolStripMenuItem
             // 
             this.removeBookToolStripMenuItem.Name = "removeBookToolStripMenuItem";
-            this.removeBookToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.removeBookToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.removeBookToolStripMenuItem.Text = "Remove Book";
             // 
             // mnuOrders

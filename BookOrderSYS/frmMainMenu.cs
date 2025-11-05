@@ -71,5 +71,12 @@ namespace BookOrderSYS
             nextForm.Show();
             this.Hide();
         }
+
+        private void mnuAddBook_Click(object sender, EventArgs e)
+        {
+            frmAddBook nextForm = new frmAddBook(this);
+            nextForm.Show();
+            this.Hide();
+        }
     }
 }

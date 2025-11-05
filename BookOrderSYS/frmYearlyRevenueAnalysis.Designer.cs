@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.mnuYearlyRevenueAnalysis = new System.Windows.Forms.MenuStrip();
             this.mnuYearlyRevenueAnalysisBack = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -82,17 +82,17 @@
             // 
             // chartYearlyRevenueAnalysis
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chartYearlyRevenueAnalysis.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chartYearlyRevenueAnalysis.Legends.Add(legend2);
+            chartArea1.Name = "ChartArea1";
+            this.chartYearlyRevenueAnalysis.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartYearlyRevenueAnalysis.Legends.Add(legend1);
             this.chartYearlyRevenueAnalysis.Location = new System.Drawing.Point(50, 83);
             this.chartYearlyRevenueAnalysis.Name = "chartYearlyRevenueAnalysis";
             this.chartYearlyRevenueAnalysis.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Grayscale;
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chartYearlyRevenueAnalysis.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chartYearlyRevenueAnalysis.Series.Add(series1);
             this.chartYearlyRevenueAnalysis.Size = new System.Drawing.Size(524, 300);
             this.chartYearlyRevenueAnalysis.TabIndex = 3;
             this.chartYearlyRevenueAnalysis.Text = "chart1";
