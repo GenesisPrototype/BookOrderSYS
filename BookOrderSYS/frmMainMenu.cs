@@ -19,7 +19,7 @@ namespace BookOrderSYS
 
         private void frmMainMenu_Load(object sender, EventArgs e)
         {
-
+            mnuBooks.Visible = false;
         }
     }
 }
