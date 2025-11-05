@@ -33,7 +33,6 @@
             this.mnuCustomers = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuRegisterCustomer = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuUpdateCustomer = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuViewCustomer = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuBooks = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuAddBook = new System.Windows.Forms.ToolStripMenuItem();
             this.updateBookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -71,8 +70,7 @@
             // 
             this.mnuCustomers.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuRegisterCustomer,
-            this.mnuUpdateCustomer,
-            this.mnuViewCustomer});
+            this.mnuUpdateCustomer});
             this.mnuCustomers.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mnuCustomers.ForeColor = System.Drawing.Color.LightGray;
             this.mnuCustomers.Name = "mnuCustomers";
@@ -82,22 +80,16 @@
             // mnuRegisterCustomer
             // 
             this.mnuRegisterCustomer.Name = "mnuRegisterCustomer";
-            this.mnuRegisterCustomer.Size = new System.Drawing.Size(172, 22);
+            this.mnuRegisterCustomer.Size = new System.Drawing.Size(180, 22);
             this.mnuRegisterCustomer.Text = "Register Customer";
             this.mnuRegisterCustomer.Click += new System.EventHandler(this.addCusToolStripMenuItem_Click);
             // 
             // mnuUpdateCustomer
             // 
             this.mnuUpdateCustomer.Name = "mnuUpdateCustomer";
-            this.mnuUpdateCustomer.Size = new System.Drawing.Size(172, 22);
+            this.mnuUpdateCustomer.Size = new System.Drawing.Size(180, 22);
             this.mnuUpdateCustomer.Text = "Update Customer";
             this.mnuUpdateCustomer.Click += new System.EventHandler(this.updateCustomerToolStripMenuItem_Click);
-            // 
-            // mnuViewCustomer
-            // 
-            this.mnuViewCustomer.Name = "mnuViewCustomer";
-            this.mnuViewCustomer.Size = new System.Drawing.Size(172, 22);
-            this.mnuViewCustomer.Text = "View Customer";
             // 
             // mnuBooks
             // 
@@ -167,6 +159,7 @@
             this.mnuExit.Name = "mnuExit";
             this.mnuExit.Size = new System.Drawing.Size(41, 20);
             this.mnuExit.Text = "Exit";
+            this.mnuExit.Click += new System.EventHandler(this.mnuExit_Click);
             // 
             // mnuAdmin
             // 
@@ -184,13 +177,13 @@
             this.listBestsellersToolStripMenuItem.Name = "listBestsellersToolStripMenuItem";
             this.listBestsellersToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
             this.listBestsellersToolStripMenuItem.Text = "Show Yearly Revenue Analysis";
-            this.listBestsellersToolStripMenuItem.Click += new System.EventHandler(this.listBestsellersToolStripMenuItem_Click);
             // 
             // listBestsellersToolStripMenuItem1
             // 
             this.listBestsellersToolStripMenuItem1.Name = "listBestsellersToolStripMenuItem1";
             this.listBestsellersToolStripMenuItem1.Size = new System.Drawing.Size(238, 22);
             this.listBestsellersToolStripMenuItem1.Text = "List Bestsellers";
+            this.listBestsellersToolStripMenuItem1.Click += new System.EventHandler(this.listBestsellersToolStripMenuItem1_Click);
             // 
             // lblBooktopia
             // 
@@ -247,7 +240,6 @@
         private System.Windows.Forms.ToolStripMenuItem mnuAdmin;
         private System.Windows.Forms.ToolStripMenuItem mnuRegisterCustomer;
         private System.Windows.Forms.ToolStripMenuItem mnuUpdateCustomer;
-        private System.Windows.Forms.ToolStripMenuItem mnuViewCustomer;
         private System.Windows.Forms.ToolStripMenuItem mnuAddBook;
         private System.Windows.Forms.ToolStripMenuItem updateBookToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem removeBookToolStripMenuItem;

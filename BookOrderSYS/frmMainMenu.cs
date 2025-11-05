@@ -25,17 +25,39 @@ namespace BookOrderSYS
 
         private void addCusToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            frmRegisterCustomer nextForm = new frmRegisterCustomer(this);
+            nextForm.Show();
         }
 
-        private void listBestsellersToolStripMenuItem_Click(object sender, EventArgs e)
-        {
 
-        }
 
         private void updateCustomerToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void mnuExit_Click(object sender, EventArgs e)
+        {
+            //Ask user to confirm 
+            DialogResult dialogResult = MessageBox.Show("Are you sure you want to exit?",
+                                                         "Confirmation",
+                                                         MessageBoxButtons.YesNo,
+                                                         MessageBoxIcon.Question);
+
+            //Now, check response
+            if (dialogResult == DialogResult.Yes) { 
+                Application.Exit();
+            }
+
+        }
+
+        private void listBestsellersToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            
+            frmListBestsellers nextForm = new frmListBestsellers(this);
+            nextForm.Show();
+            this.Hide();
         }
     }
 }

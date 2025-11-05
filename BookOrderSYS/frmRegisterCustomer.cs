@@ -12,10 +12,24 @@ namespace BookOrderSYS
 {
     public partial class frmRegisterCustomer : Form
     {
+        frmMainMenu parent;
         public frmRegisterCustomer()
         {
             InitializeComponent();
         }
+
+        public frmRegisterCustomer(frmMainMenu parent) { 
+            InitializeComponent();
+            this.parent = parent;
+        
+        }
+
+        private void mnuRegisterCustomerBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            parent.Visible = true;
+        }
+
 
         private void label3_Click(object sender, EventArgs e)
         {
@@ -26,5 +40,12 @@ namespace BookOrderSYS
         {
 
         }
+
+        private void frmRegisterCustomer_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }
