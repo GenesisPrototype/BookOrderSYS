@@ -154,6 +154,7 @@
             this.cancelOrderToolStripMenuItem.Name = "cancelOrderToolStripMenuItem";
             this.cancelOrderToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cancelOrderToolStripMenuItem.Text = "View Order";
+            this.cancelOrderToolStripMenuItem.Click += new System.EventHandler(this.cancelOrderToolStripMenuItem_Click);
             // 
             // mnuExit
             // 
