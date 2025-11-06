@@ -70,9 +70,10 @@
             // lblRemoveBookInstruction
             // 
             this.lblRemoveBookInstruction.AutoSize = true;
-            this.lblRemoveBookInstruction.Location = new System.Drawing.Point(150, 79);
+            this.lblRemoveBookInstruction.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRemoveBookInstruction.Location = new System.Drawing.Point(134, 79);
             this.lblRemoveBookInstruction.Name = "lblRemoveBookInstruction";
-            this.lblRemoveBookInstruction.Size = new System.Drawing.Size(195, 13);
+            this.lblRemoveBookInstruction.Size = new System.Drawing.Size(239, 12);
             this.lblRemoveBookInstruction.TabIndex = 2;
             this.lblRemoveBookInstruction.Text = "Enter the ID of the book to be removed.\r\n";
             // 

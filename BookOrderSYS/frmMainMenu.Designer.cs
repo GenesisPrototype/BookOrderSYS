@@ -30,13 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMainMenu));
             this.mnuMainMenu = new System.Windows.Forms.MenuStrip();
-            this.mnuCustomers = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuViewCustomer = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuUpdateCustomer = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuBooks = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuAddBook = new System.Windows.Forms.ToolStripMenuItem();
             this.updateBookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.removeBookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuCustomers = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuViewCustomer = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuUpdateCustomer = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuOrders = new System.Windows.Forms.ToolStripMenuItem();
             this.createOrderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cancelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -66,6 +66,39 @@
             this.mnuMainMenu.TabIndex = 0;
             this.mnuMainMenu.Text = "menuStrip1";
             // 
+            // mnuBooks
+            // 
+            this.mnuBooks.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuAddBook,
+            this.updateBookToolStripMenuItem,
+            this.removeBookToolStripMenuItem});
+            this.mnuBooks.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mnuBooks.ForeColor = System.Drawing.Color.LightGray;
+            this.mnuBooks.Name = "mnuBooks";
+            this.mnuBooks.Size = new System.Drawing.Size(47, 20);
+            this.mnuBooks.Text = "Books";
+            // 
+            // mnuAddBook
+            // 
+            this.mnuAddBook.Name = "mnuAddBook";
+            this.mnuAddBook.Size = new System.Drawing.Size(136, 22);
+            this.mnuAddBook.Text = "Add Book";
+            this.mnuAddBook.Click += new System.EventHandler(this.mnuAddBook_Click);
+            // 
+            // updateBookToolStripMenuItem
+            // 
+            this.updateBookToolStripMenuItem.Name = "updateBookToolStripMenuItem";
+            this.updateBookToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.updateBookToolStripMenuItem.Text = "Update Book";
+            this.updateBookToolStripMenuItem.Click += new System.EventHandler(this.updateBookToolStripMenuItem_Click);
+            // 
+            // removeBookToolStripMenuItem
+            // 
+            this.removeBookToolStripMenuItem.Name = "removeBookToolStripMenuItem";
+            this.removeBookToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.removeBookToolStripMenuItem.Text = "Remove Book";
+            this.removeBookToolStripMenuItem.Click += new System.EventHandler(this.removeBookToolStripMenuItem_Click);
+            // 
             // mnuCustomers
             // 
             this.mnuCustomers.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -91,39 +124,6 @@
             this.mnuUpdateCustomer.Text = "Update Customer";
             this.mnuUpdateCustomer.Click += new System.EventHandler(this.updateCustomerToolStripMenuItem_Click);
             // 
-            // mnuBooks
-            // 
-            this.mnuBooks.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuAddBook,
-            this.updateBookToolStripMenuItem,
-            this.removeBookToolStripMenuItem});
-            this.mnuBooks.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mnuBooks.ForeColor = System.Drawing.Color.LightGray;
-            this.mnuBooks.Name = "mnuBooks";
-            this.mnuBooks.Size = new System.Drawing.Size(47, 20);
-            this.mnuBooks.Text = "Books";
-            // 
-            // mnuAddBook
-            // 
-            this.mnuAddBook.Name = "mnuAddBook";
-            this.mnuAddBook.Size = new System.Drawing.Size(180, 22);
-            this.mnuAddBook.Text = "Add Book";
-            this.mnuAddBook.Click += new System.EventHandler(this.mnuAddBook_Click);
-            // 
-            // updateBookToolStripMenuItem
-            // 
-            this.updateBookToolStripMenuItem.Name = "updateBookToolStripMenuItem";
-            this.updateBookToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.updateBookToolStripMenuItem.Text = "Update Book";
-            this.updateBookToolStripMenuItem.Click += new System.EventHandler(this.updateBookToolStripMenuItem_Click);
-            // 
-            // removeBookToolStripMenuItem
-            // 
-            this.removeBookToolStripMenuItem.Name = "removeBookToolStripMenuItem";
-            this.removeBookToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.removeBookToolStripMenuItem.Text = "Remove Book";
-            this.removeBookToolStripMenuItem.Click += new System.EventHandler(this.removeBookToolStripMenuItem_Click);
-            // 
             // mnuOrders
             // 
             this.mnuOrders.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -139,19 +139,20 @@
             // createOrderToolStripMenuItem
             // 
             this.createOrderToolStripMenuItem.Name = "createOrderToolStripMenuItem";
-            this.createOrderToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.createOrderToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.createOrderToolStripMenuItem.Text = "Create Order";
             // 
             // cancelToolStripMenuItem
             // 
             this.cancelToolStripMenuItem.Name = "cancelToolStripMenuItem";
-            this.cancelToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.cancelToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cancelToolStripMenuItem.Text = "Cancel Order";
+            this.cancelToolStripMenuItem.Click += new System.EventHandler(this.cancelToolStripMenuItem_Click);
             // 
             // cancelOrderToolStripMenuItem
             // 
             this.cancelOrderToolStripMenuItem.Name = "cancelOrderToolStripMenuItem";
-            this.cancelOrderToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.cancelOrderToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cancelOrderToolStripMenuItem.Text = "View Order";
             // 
             // mnuExit

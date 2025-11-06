@@ -94,5 +94,12 @@ namespace BookOrderSYS
             nextForm.Show();
             this.Hide();
         }
+
+        private void cancelToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCancelOrder nextForm = new frmCancelOrder(this);
+            nextForm.Show();
+            this.Hide();
+        }
     }
 }
