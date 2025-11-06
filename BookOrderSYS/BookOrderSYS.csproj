@@ -65,6 +65,12 @@
     <Compile Include="frmMainMenu.Designer.cs">
       <DependentUpon>frmMainMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmRemoveBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRemoveBook.Designer.cs">
+      <DependentUpon>frmRemoveBook.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmUpdateCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMainMenu.resx">
       <DependentUpon>frmMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRemoveBook.resx">
+      <DependentUpon>frmRemoveBook.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmUpdateCustomer.resx">
       <DependentUpon>frmUpdateCustomer.cs</DependentUpon>

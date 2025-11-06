@@ -87,5 +87,12 @@ namespace BookOrderSYS
             nextForm.Show();
             this.Hide();
         }
+
+        private void removeBookToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRemoveBook nextForm = new frmRemoveBook(this);
+            nextForm.Show();
+            this.Hide();
+        }
     }
 }

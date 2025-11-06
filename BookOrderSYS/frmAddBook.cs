@@ -13,6 +13,7 @@ namespace BookOrderSYS
     public partial class frmAddBook : Form
     {
         frmMainMenu parent;
+
         public frmAddBook()
         {
             InitializeComponent();

@@ -50,7 +50,7 @@
             // 
             this.lblUpdateBook.AutoSize = true;
             this.lblUpdateBook.Font = new System.Drawing.Font("MS Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUpdateBook.Location = new System.Drawing.Point(203, 48);
+            this.lblUpdateBook.Location = new System.Drawing.Point(216, 47);
             this.lblUpdateBook.Name = "lblUpdateBook";
             this.lblUpdateBook.Size = new System.Drawing.Size(130, 19);
             this.lblUpdateBook.TabIndex = 1;

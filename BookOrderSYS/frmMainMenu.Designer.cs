@@ -80,14 +80,14 @@
             // mnuViewCustomer
             // 
             this.mnuViewCustomer.Name = "mnuViewCustomer";
-            this.mnuViewCustomer.Size = new System.Drawing.Size(180, 22);
+            this.mnuViewCustomer.Size = new System.Drawing.Size(160, 22);
             this.mnuViewCustomer.Text = "View Customer";
             this.mnuViewCustomer.Click += new System.EventHandler(this.addCusToolStripMenuItem_Click);
             // 
             // mnuUpdateCustomer
             // 
             this.mnuUpdateCustomer.Name = "mnuUpdateCustomer";
-            this.mnuUpdateCustomer.Size = new System.Drawing.Size(180, 22);
+            this.mnuUpdateCustomer.Size = new System.Drawing.Size(160, 22);
             this.mnuUpdateCustomer.Text = "Update Customer";
             this.mnuUpdateCustomer.Click += new System.EventHandler(this.updateCustomerToolStripMenuItem_Click);
             // 
@@ -122,6 +122,7 @@
             this.removeBookToolStripMenuItem.Name = "removeBookToolStripMenuItem";
             this.removeBookToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.removeBookToolStripMenuItem.Text = "Remove Book";
+            this.removeBookToolStripMenuItem.Click += new System.EventHandler(this.removeBookToolStripMenuItem_Click);
             // 
             // mnuOrders
             // 
