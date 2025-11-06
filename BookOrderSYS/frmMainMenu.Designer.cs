@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMainMenu));
             this.mnuMainMenu = new System.Windows.Forms.MenuStrip();
             this.mnuCustomers = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuRegisterCustomer = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuViewCustomer = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuUpdateCustomer = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuBooks = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuAddBook = new System.Windows.Forms.ToolStripMenuItem();
@@ -55,8 +55,8 @@
             // 
             this.mnuMainMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(118)))), ((int)(((byte)(129)))));
             this.mnuMainMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuCustomers,
             this.mnuBooks,
+            this.mnuCustomers,
             this.mnuOrders,
             this.mnuExit,
             this.mnuAdmin});
@@ -69,7 +69,7 @@
             // mnuCustomers
             // 
             this.mnuCustomers.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuRegisterCustomer,
+            this.mnuViewCustomer,
             this.mnuUpdateCustomer});
             this.mnuCustomers.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mnuCustomers.ForeColor = System.Drawing.Color.LightGray;
@@ -77,17 +77,17 @@
             this.mnuCustomers.Size = new System.Drawing.Size(71, 20);
             this.mnuCustomers.Text = "Customers";
             // 
-            // mnuRegisterCustomer
+            // mnuViewCustomer
             // 
-            this.mnuRegisterCustomer.Name = "mnuRegisterCustomer";
-            this.mnuRegisterCustomer.Size = new System.Drawing.Size(172, 22);
-            this.mnuRegisterCustomer.Text = "Register Customer";
-            this.mnuRegisterCustomer.Click += new System.EventHandler(this.addCusToolStripMenuItem_Click);
+            this.mnuViewCustomer.Name = "mnuViewCustomer";
+            this.mnuViewCustomer.Size = new System.Drawing.Size(180, 22);
+            this.mnuViewCustomer.Text = "View Customer";
+            this.mnuViewCustomer.Click += new System.EventHandler(this.addCusToolStripMenuItem_Click);
             // 
             // mnuUpdateCustomer
             // 
             this.mnuUpdateCustomer.Name = "mnuUpdateCustomer";
-            this.mnuUpdateCustomer.Size = new System.Drawing.Size(172, 22);
+            this.mnuUpdateCustomer.Size = new System.Drawing.Size(180, 22);
             this.mnuUpdateCustomer.Text = "Update Customer";
             this.mnuUpdateCustomer.Click += new System.EventHandler(this.updateCustomerToolStripMenuItem_Click);
             // 
@@ -115,6 +115,7 @@
             this.updateBookToolStripMenuItem.Name = "updateBookToolStripMenuItem";
             this.updateBookToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.updateBookToolStripMenuItem.Text = "Update Book";
+            this.updateBookToolStripMenuItem.Click += new System.EventHandler(this.updateBookToolStripMenuItem_Click);
             // 
             // removeBookToolStripMenuItem
             // 
@@ -241,7 +242,7 @@
         private System.Windows.Forms.ToolStripMenuItem mnuExit;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolStripMenuItem mnuAdmin;
-        private System.Windows.Forms.ToolStripMenuItem mnuRegisterCustomer;
+        private System.Windows.Forms.ToolStripMenuItem mnuViewCustomer;
         private System.Windows.Forms.ToolStripMenuItem mnuUpdateCustomer;
         private System.Windows.Forms.ToolStripMenuItem mnuAddBook;
         private System.Windows.Forms.ToolStripMenuItem updateBookToolStripMenuItem;

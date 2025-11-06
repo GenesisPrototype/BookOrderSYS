@@ -26,7 +26,7 @@ namespace BookOrderSYS
         private void addCusToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            frmRegisterCustomer nextForm = new frmRegisterCustomer(this);
+            frmViewCustomer nextForm = new frmViewCustomer(this);
             nextForm.Show();
         }
 
@@ -34,7 +34,9 @@ namespace BookOrderSYS
 
         private void updateCustomerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            frmUpdateCustomer nextForm = new frmUpdateCustomer(this);
+            nextForm.Show();
         }
 
         private void mnuExit_Click(object sender, EventArgs e)
@@ -75,6 +77,13 @@ namespace BookOrderSYS
         private void mnuAddBook_Click(object sender, EventArgs e)
         {
             frmAddBook nextForm = new frmAddBook(this);
+            nextForm.Show();
+            this.Hide();
+        }
+
+        private void updateBookToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmUpdateBook nextForm = new frmUpdateBook(this);
             nextForm.Show();
             this.Hide();
         }
