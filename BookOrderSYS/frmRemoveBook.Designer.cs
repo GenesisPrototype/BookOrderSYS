@@ -40,7 +40,7 @@
             // 
             // mnuRemoveBook
             // 
-            this.mnuRemoveBook.BackColor = System.Drawing.Color.Teal;
+            this.mnuRemoveBook.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.mnuRemoveBook.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuRemoveBack});
             this.mnuRemoveBook.Location = new System.Drawing.Point(0, 0);
@@ -51,7 +51,7 @@
             // mnuRemoveBack
             // 
             this.mnuRemoveBack.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.mnuRemoveBack.ForeColor = System.Drawing.Color.LightGray;
+            this.mnuRemoveBack.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.mnuRemoveBack.Name = "mnuRemoveBack";
             this.mnuRemoveBack.Size = new System.Drawing.Size(44, 20);
             this.mnuRemoveBack.Text = "Back";
@@ -97,7 +97,7 @@
             // 
             // btnRemoveBook
             // 
-            this.btnRemoveBook.BackColor = System.Drawing.Color.Teal;
+            this.btnRemoveBook.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnRemoveBook.ForeColor = System.Drawing.Color.LightGray;
             this.btnRemoveBook.Location = new System.Drawing.Point(207, 238);
             this.btnRemoveBook.Name = "btnRemoveBook";
@@ -111,7 +111,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightGray;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(496, 305);
             this.Controls.Add(this.btnRemoveBook);
             this.Controls.Add(this.txtRemoveBookID);

@@ -45,20 +45,19 @@
             // 
             // mnuYearlyRevenueAnalysis
             // 
-            this.mnuYearlyRevenueAnalysis.BackColor = System.Drawing.Color.Teal;
+            this.mnuYearlyRevenueAnalysis.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.mnuYearlyRevenueAnalysis.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuYearlyRevenueAnalysisBack});
             this.mnuYearlyRevenueAnalysis.Location = new System.Drawing.Point(0, 0);
             this.mnuYearlyRevenueAnalysis.Name = "mnuYearlyRevenueAnalysis";
-            this.mnuYearlyRevenueAnalysis.Size = new System.Drawing.Size(619, 24);
+            this.mnuYearlyRevenueAnalysis.Size = new System.Drawing.Size(624, 24);
             this.mnuYearlyRevenueAnalysis.TabIndex = 0;
-            this.mnuYearlyRevenueAnalysis.Text = "menuStrip1";
             // 
             // mnuYearlyRevenueAnalysisBack
             // 
             this.mnuYearlyRevenueAnalysisBack.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.mnuYearlyRevenueAnalysisBack.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mnuYearlyRevenueAnalysisBack.ForeColor = System.Drawing.Color.LightGray;
+            this.mnuYearlyRevenueAnalysisBack.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.mnuYearlyRevenueAnalysisBack.Name = "mnuYearlyRevenueAnalysisBack";
             this.mnuYearlyRevenueAnalysisBack.Size = new System.Drawing.Size(41, 20);
             this.mnuYearlyRevenueAnalysisBack.Text = "Back";
@@ -74,6 +73,7 @@
             // 
             this.lblYearlyRevenueAnalysis.AutoSize = true;
             this.lblYearlyRevenueAnalysis.Font = new System.Drawing.Font("MS Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblYearlyRevenueAnalysis.ForeColor = System.Drawing.Color.Black;
             this.lblYearlyRevenueAnalysis.Location = new System.Drawing.Point(195, 51);
             this.lblYearlyRevenueAnalysis.Name = "lblYearlyRevenueAnalysis";
             this.lblYearlyRevenueAnalysis.Size = new System.Drawing.Size(223, 16);
@@ -88,7 +88,7 @@
             this.chartYearlyRevenueAnalysis.Legends.Add(legend1);
             this.chartYearlyRevenueAnalysis.Location = new System.Drawing.Point(50, 83);
             this.chartYearlyRevenueAnalysis.Name = "chartYearlyRevenueAnalysis";
-            this.chartYearlyRevenueAnalysis.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Grayscale;
+            this.chartYearlyRevenueAnalysis.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Series1";
@@ -101,6 +101,7 @@
             // 
             this.lblRevenueSummary.AutoSize = true;
             this.lblRevenueSummary.Font = new System.Drawing.Font("MS Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRevenueSummary.ForeColor = System.Drawing.Color.Black;
             this.lblRevenueSummary.Location = new System.Drawing.Point(47, 409);
             this.lblRevenueSummary.Name = "lblRevenueSummary";
             this.lblRevenueSummary.Size = new System.Drawing.Size(159, 13);
@@ -120,8 +121,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(619, 565);
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ClientSize = new System.Drawing.Size(624, 565);
             this.Controls.Add(this.listBoxYearlyRevenueAnalysis);
             this.Controls.Add(this.lblRevenueSummary);
             this.Controls.Add(this.chartYearlyRevenueAnalysis);

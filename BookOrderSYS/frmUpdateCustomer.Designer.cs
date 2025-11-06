@@ -48,7 +48,7 @@
             // 
             // mnuUpdateCustomer
             // 
-            this.mnuUpdateCustomer.BackColor = System.Drawing.Color.Teal;
+            this.mnuUpdateCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.mnuUpdateCustomer.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuUpdateCustomerBack});
             this.mnuUpdateCustomer.Location = new System.Drawing.Point(0, 0);
@@ -59,7 +59,7 @@
             // mnuUpdateCustomerBack
             // 
             this.mnuUpdateCustomerBack.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.mnuUpdateCustomerBack.ForeColor = System.Drawing.Color.LightGray;
+            this.mnuUpdateCustomerBack.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.mnuUpdateCustomerBack.Name = "mnuUpdateCustomerBack";
             this.mnuUpdateCustomerBack.Size = new System.Drawing.Size(44, 20);
             this.mnuUpdateCustomerBack.Text = "Back";
@@ -177,7 +177,7 @@
             // 
             // btnUpdateCustomer
             // 
-            this.btnUpdateCustomer.BackColor = System.Drawing.Color.Teal;
+            this.btnUpdateCustomer.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnUpdateCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdateCustomer.ForeColor = System.Drawing.Color.LightGray;
             this.btnUpdateCustomer.Location = new System.Drawing.Point(270, 439);
@@ -192,7 +192,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightGray;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(646, 517);
             this.Controls.Add(this.btnUpdateCustomer);
             this.Controls.Add(this.lblInstruction);

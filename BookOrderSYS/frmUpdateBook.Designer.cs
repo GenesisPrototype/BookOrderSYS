@@ -58,7 +58,7 @@
             // 
             // mnuUpdateBook
             // 
-            this.mnuUpdateBook.BackColor = System.Drawing.Color.Teal;
+            this.mnuUpdateBook.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.mnuUpdateBook.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mnuUpdateBook.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuUpdateBookBack});
@@ -70,7 +70,7 @@
             // mnuUpdateBookBack
             // 
             this.mnuUpdateBookBack.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.mnuUpdateBookBack.ForeColor = System.Drawing.Color.LightGray;
+            this.mnuUpdateBookBack.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.mnuUpdateBookBack.Name = "mnuUpdateBookBack";
             this.mnuUpdateBookBack.Size = new System.Drawing.Size(41, 20);
             this.mnuUpdateBookBack.Text = "Back";
@@ -88,7 +88,7 @@
             // 
             // btnUpdateBook
             // 
-            this.btnUpdateBook.BackColor = System.Drawing.Color.Teal;
+            this.btnUpdateBook.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnUpdateBook.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdateBook.ForeColor = System.Drawing.Color.LightGray;
             this.btnUpdateBook.Location = new System.Drawing.Point(244, 452);
@@ -102,7 +102,7 @@
             // lblUpdateBookID
             // 
             this.lblUpdateBookID.AutoSize = true;
-            this.lblUpdateBookID.BackColor = System.Drawing.Color.LightGray;
+            this.lblUpdateBookID.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lblUpdateBookID.Font = new System.Drawing.Font("MS Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUpdateBookID.Location = new System.Drawing.Point(204, 148);
             this.lblUpdateBookID.Name = "lblUpdateBookID";
@@ -190,7 +190,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightGray;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(575, 533);
             this.Controls.Add(this.txtUpdateBookStock);
             this.Controls.Add(this.txtUpdateBookPrice);

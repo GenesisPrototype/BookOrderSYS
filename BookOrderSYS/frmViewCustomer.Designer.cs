@@ -41,7 +41,7 @@
             // 
             this.mnuViewCustomerBack.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.mnuViewCustomerBack.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mnuViewCustomerBack.ForeColor = System.Drawing.Color.LightGray;
+            this.mnuViewCustomerBack.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.mnuViewCustomerBack.Name = "mnuViewCustomerBack";
             this.mnuViewCustomerBack.Size = new System.Drawing.Size(41, 20);
             this.mnuViewCustomerBack.Text = "Back";
@@ -49,7 +49,7 @@
             // 
             // mnuViewCustomer
             // 
-            this.mnuViewCustomer.BackColor = System.Drawing.Color.Teal;
+            this.mnuViewCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.mnuViewCustomer.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuViewCustomerBack});
             this.mnuViewCustomer.Location = new System.Drawing.Point(0, 0);
@@ -86,7 +86,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightGray;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(626, 434);
             this.Controls.Add(this.grpViewCustomer);
             this.Controls.Add(this.mnuViewCustomer);

@@ -41,7 +41,7 @@
             // 
             // mnuViewOrder
             // 
-            this.mnuViewOrder.BackColor = System.Drawing.Color.Teal;
+            this.mnuViewOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.mnuViewOrder.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuViewOrderBack});
             this.mnuViewOrder.Location = new System.Drawing.Point(0, 0);
@@ -52,7 +52,7 @@
             // mnuViewOrderBack
             // 
             this.mnuViewOrderBack.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.mnuViewOrderBack.ForeColor = System.Drawing.Color.LightGray;
+            this.mnuViewOrderBack.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.mnuViewOrderBack.Name = "mnuViewOrderBack";
             this.mnuViewOrderBack.Size = new System.Drawing.Size(44, 20);
             this.mnuViewOrderBack.Text = "Back";
@@ -98,7 +98,7 @@
             // 
             // btnViewOrder
             // 
-            this.btnViewOrder.BackColor = System.Drawing.Color.Teal;
+            this.btnViewOrder.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnViewOrder.ForeColor = System.Drawing.Color.LightGray;
             this.btnViewOrder.Location = new System.Drawing.Point(239, 173);
             this.btnViewOrder.Name = "btnViewOrder";
@@ -120,7 +120,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightGray;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(569, 445);
             this.Controls.Add(this.lblViewOrderDetails);
             this.Controls.Add(this.btnViewOrder);

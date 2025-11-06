@@ -47,7 +47,7 @@
             // 
             // grpAddBook
             // 
-            this.grpAddBook.BackColor = System.Drawing.Color.LightGray;
+            this.grpAddBook.BackColor = System.Drawing.Color.WhiteSmoke;
             this.grpAddBook.Controls.Add(this.txtStock);
             this.grpAddBook.Controls.Add(this.txtPrice);
             this.grpAddBook.Controls.Add(this.txtAuthor);
@@ -99,7 +99,7 @@
             // 
             // btnAddBook
             // 
-            this.btnAddBook.BackColor = System.Drawing.Color.Teal;
+            this.btnAddBook.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnAddBook.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddBook.ForeColor = System.Drawing.Color.LightGray;
             this.btnAddBook.Location = new System.Drawing.Point(180, 292);
@@ -148,7 +148,7 @@
             // 
             // mnuAddBook
             // 
-            this.mnuAddBook.BackColor = System.Drawing.Color.Teal;
+            this.mnuAddBook.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.mnuAddBook.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuAddBookBack});
             this.mnuAddBook.Location = new System.Drawing.Point(0, 0);
@@ -160,7 +160,7 @@
             // 
             this.mnuAddBookBack.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.mnuAddBookBack.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mnuAddBookBack.ForeColor = System.Drawing.Color.LightGray;
+            this.mnuAddBookBack.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.mnuAddBookBack.Name = "mnuAddBookBack";
             this.mnuAddBookBack.Size = new System.Drawing.Size(41, 20);
             this.mnuAddBookBack.Text = "Back";
@@ -180,7 +180,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightGray;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(575, 484);
             this.Controls.Add(this.lblAddBook);
             this.Controls.Add(this.grpAddBook);

@@ -53,7 +53,7 @@
             // 
             // mnuMainMenu
             // 
-            this.mnuMainMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(118)))), ((int)(((byte)(129)))));
+            this.mnuMainMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.mnuMainMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuBooks,
             this.mnuCustomers,
@@ -73,7 +73,7 @@
             this.updateBookToolStripMenuItem,
             this.removeBookToolStripMenuItem});
             this.mnuBooks.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mnuBooks.ForeColor = System.Drawing.Color.LightGray;
+            this.mnuBooks.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.mnuBooks.Name = "mnuBooks";
             this.mnuBooks.Size = new System.Drawing.Size(47, 20);
             this.mnuBooks.Text = "Books";
@@ -81,21 +81,21 @@
             // mnuAddBook
             // 
             this.mnuAddBook.Name = "mnuAddBook";
-            this.mnuAddBook.Size = new System.Drawing.Size(136, 22);
+            this.mnuAddBook.Size = new System.Drawing.Size(180, 22);
             this.mnuAddBook.Text = "Add Book";
             this.mnuAddBook.Click += new System.EventHandler(this.mnuAddBook_Click);
             // 
             // updateBookToolStripMenuItem
             // 
             this.updateBookToolStripMenuItem.Name = "updateBookToolStripMenuItem";
-            this.updateBookToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.updateBookToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.updateBookToolStripMenuItem.Text = "Update Book";
             this.updateBookToolStripMenuItem.Click += new System.EventHandler(this.updateBookToolStripMenuItem_Click);
             // 
             // removeBookToolStripMenuItem
             // 
             this.removeBookToolStripMenuItem.Name = "removeBookToolStripMenuItem";
-            this.removeBookToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.removeBookToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.removeBookToolStripMenuItem.Text = "Remove Book";
             this.removeBookToolStripMenuItem.Click += new System.EventHandler(this.removeBookToolStripMenuItem_Click);
             // 
@@ -105,7 +105,7 @@
             this.mnuViewCustomer,
             this.mnuUpdateCustomer});
             this.mnuCustomers.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mnuCustomers.ForeColor = System.Drawing.Color.LightGray;
+            this.mnuCustomers.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.mnuCustomers.Name = "mnuCustomers";
             this.mnuCustomers.Size = new System.Drawing.Size(71, 20);
             this.mnuCustomers.Text = "Customers";
@@ -113,14 +113,14 @@
             // mnuViewCustomer
             // 
             this.mnuViewCustomer.Name = "mnuViewCustomer";
-            this.mnuViewCustomer.Size = new System.Drawing.Size(160, 22);
+            this.mnuViewCustomer.Size = new System.Drawing.Size(180, 22);
             this.mnuViewCustomer.Text = "View Customer";
             this.mnuViewCustomer.Click += new System.EventHandler(this.addCusToolStripMenuItem_Click);
             // 
             // mnuUpdateCustomer
             // 
             this.mnuUpdateCustomer.Name = "mnuUpdateCustomer";
-            this.mnuUpdateCustomer.Size = new System.Drawing.Size(160, 22);
+            this.mnuUpdateCustomer.Size = new System.Drawing.Size(180, 22);
             this.mnuUpdateCustomer.Text = "Update Customer";
             this.mnuUpdateCustomer.Click += new System.EventHandler(this.updateCustomerToolStripMenuItem_Click);
             // 
@@ -131,7 +131,7 @@
             this.cancelToolStripMenuItem,
             this.cancelOrderToolStripMenuItem});
             this.mnuOrders.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mnuOrders.ForeColor = System.Drawing.Color.LightGray;
+            this.mnuOrders.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.mnuOrders.Name = "mnuOrders";
             this.mnuOrders.Size = new System.Drawing.Size(53, 20);
             this.mnuOrders.Text = "Orders";
@@ -160,7 +160,7 @@
             // 
             this.mnuExit.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.mnuExit.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mnuExit.ForeColor = System.Drawing.Color.LightGray;
+            this.mnuExit.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.mnuExit.Name = "mnuExit";
             this.mnuExit.Size = new System.Drawing.Size(41, 20);
             this.mnuExit.Text = "Exit";
@@ -172,7 +172,7 @@
             this.listBestsellersToolStripMenuItem,
             this.listBestsellersToolStripMenuItem1});
             this.mnuAdmin.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mnuAdmin.ForeColor = System.Drawing.Color.LightGray;
+            this.mnuAdmin.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.mnuAdmin.Name = "mnuAdmin";
             this.mnuAdmin.Size = new System.Drawing.Size(47, 20);
             this.mnuAdmin.Text = "Admin";
@@ -210,7 +210,8 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 24);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(624, 321);
+            this.pictureBox1.Size = new System.Drawing.Size(624, 363);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
@@ -218,7 +219,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 11F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(624, 345);
+            this.ClientSize = new System.Drawing.Size(624, 387);
             this.Controls.Add(this.lblBooktopia);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.mnuMainMenu);

@@ -43,7 +43,7 @@
             // 
             // mnuCancelOrder
             // 
-            this.mnuCancelOrder.BackColor = System.Drawing.Color.Teal;
+            this.mnuCancelOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.mnuCancelOrder.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuCancelOrderBack});
             this.mnuCancelOrder.Location = new System.Drawing.Point(0, 0);
@@ -54,7 +54,7 @@
             // mnuCancelOrderBack
             // 
             this.mnuCancelOrderBack.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.mnuCancelOrderBack.ForeColor = System.Drawing.Color.LightGray;
+            this.mnuCancelOrderBack.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.mnuCancelOrderBack.Name = "mnuCancelOrderBack";
             this.mnuCancelOrderBack.Size = new System.Drawing.Size(44, 20);
             this.mnuCancelOrderBack.Text = "Back";
@@ -105,7 +105,7 @@
             // 
             // btnCancelOrder
             // 
-            this.btnCancelOrder.BackColor = System.Drawing.Color.Teal;
+            this.btnCancelOrder.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnCancelOrder.ForeColor = System.Drawing.Color.LightGray;
             this.btnCancelOrder.Location = new System.Drawing.Point(195, 236);
             this.btnCancelOrder.Name = "btnCancelOrder";
@@ -129,7 +129,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightGray;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(496, 305);
             this.Controls.Add(this.lblWarning);
             this.Controls.Add(this.btnCancelOrder);
