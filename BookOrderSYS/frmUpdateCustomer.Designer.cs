@@ -169,19 +169,20 @@
             // 
             this.lblInstruction.AutoSize = true;
             this.lblInstruction.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInstruction.Location = new System.Drawing.Point(118, 74);
+            this.lblInstruction.Location = new System.Drawing.Point(100, 73);
             this.lblInstruction.Name = "lblInstruction";
-            this.lblInstruction.Size = new System.Drawing.Size(425, 12);
+            this.lblInstruction.Size = new System.Drawing.Size(467, 12);
             this.lblInstruction.TabIndex = 12;
-            this.lblInstruction.Text = "Enter the ID of the customer to be updated. Then change their details.\r\n";
+            this.lblInstruction.Text = "Enter the ID of the customer to be updated, in order to change their details.\r\n";
             // 
             // btnUpdateCustomer
             // 
             this.btnUpdateCustomer.BackColor = System.Drawing.Color.Teal;
+            this.btnUpdateCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdateCustomer.ForeColor = System.Drawing.Color.LightGray;
             this.btnUpdateCustomer.Location = new System.Drawing.Point(270, 439);
             this.btnUpdateCustomer.Name = "btnUpdateCustomer";
-            this.btnUpdateCustomer.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdateCustomer.Size = new System.Drawing.Size(80, 27);
             this.btnUpdateCustomer.TabIndex = 13;
             this.btnUpdateCustomer.Text = "Update";
             this.btnUpdateCustomer.UseVisualStyleBackColor = false;

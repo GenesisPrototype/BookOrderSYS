@@ -57,7 +57,7 @@ namespace BookOrderSYS
                 return;
             }
 
-            if (!int.TryParse(stockAsText, out int stock) || stock < 0)
+            if (!int.TryParse(stockAsText, out int stock) || stock <= 0)
             {
                 MessageBox.Show("Please enter a valid whole number.",
                                 "Invalid Info",
@@ -77,6 +77,11 @@ namespace BookOrderSYS
             txtAuthor.Clear();
             txtPrice.Clear();
             txtStock.Clear();
+        }
+
+        private void frmAddBook_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
