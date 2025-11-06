@@ -91,14 +91,14 @@
             this.lblCancelOrderID.Font = new System.Drawing.Font("MS Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCancelOrderID.Location = new System.Drawing.Point(156, 161);
             this.lblCancelOrderID.Name = "lblCancelOrderID";
-            this.lblCancelOrderID.Size = new System.Drawing.Size(21, 13);
+            this.lblCancelOrderID.Size = new System.Drawing.Size(63, 13);
             this.lblCancelOrderID.TabIndex = 4;
-            this.lblCancelOrderID.Text = "ID";
+            this.lblCancelOrderID.Text = "Order ID";
             // 
             // txtCancelOrderID
             // 
             this.txtCancelOrderID.Font = new System.Drawing.Font("MS Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCancelOrderID.Location = new System.Drawing.Point(194, 158);
+            this.txtCancelOrderID.Location = new System.Drawing.Point(225, 158);
             this.txtCancelOrderID.Name = "txtCancelOrderID";
             this.txtCancelOrderID.Size = new System.Drawing.Size(100, 20);
             this.txtCancelOrderID.TabIndex = 5;
@@ -107,11 +107,11 @@
             // 
             this.btnCancelOrder.BackColor = System.Drawing.Color.Teal;
             this.btnCancelOrder.ForeColor = System.Drawing.Color.LightGray;
-            this.btnCancelOrder.Location = new System.Drawing.Point(203, 234);
+            this.btnCancelOrder.Location = new System.Drawing.Point(195, 236);
             this.btnCancelOrder.Name = "btnCancelOrder";
-            this.btnCancelOrder.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelOrder.Size = new System.Drawing.Size(91, 23);
             this.btnCancelOrder.TabIndex = 6;
-            this.btnCancelOrder.Text = "Cancel";
+            this.btnCancelOrder.Text = "Cancel Order";
             this.btnCancelOrder.UseVisualStyleBackColor = false;
             this.btnCancelOrder.Click += new System.EventHandler(this.btnCancelOrder_Click);
             // 

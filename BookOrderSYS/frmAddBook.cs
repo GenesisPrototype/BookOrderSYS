@@ -50,7 +50,7 @@ namespace BookOrderSYS
             }
 
             //validate price n stock
-            if (!decimal.TryParse(priceAsText, out decimal price) || price < 0)
+            if (!decimal.TryParse(priceAsText, out decimal price) || price <= 0)
             {
                 MessageBox.Show("Please enter a valid positive number.",
                                 "Invalid Info",
@@ -69,8 +69,13 @@ namespace BookOrderSYS
             //would save data - but not doing this now
 
             //confirmation message
-            MessageBox.Show("Book added successfully!",
-                            "Confirmation",
+            string message = "Book added successfully!\n\n" +
+                 "Title: " + title +
+                 "\nAuthor: " + author +
+                 "\nPrice: €" + priceAsText +
+                 "\nStock Qty: " + stockAsText;
+
+            MessageBox.Show(message, "Confirmation", 
                             MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             //reset UI

@@ -83,14 +83,14 @@
             this.lblRemoveBookID.Font = new System.Drawing.Font("MS Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRemoveBookID.Location = new System.Drawing.Point(159, 167);
             this.lblRemoveBookID.Name = "lblRemoveBookID";
-            this.lblRemoveBookID.Size = new System.Drawing.Size(21, 13);
+            this.lblRemoveBookID.Size = new System.Drawing.Size(56, 13);
             this.lblRemoveBookID.TabIndex = 3;
-            this.lblRemoveBookID.Text = "ID";
+            this.lblRemoveBookID.Text = "Book ID";
             // 
             // txtRemoveBookID
             // 
             this.txtRemoveBookID.Font = new System.Drawing.Font("MS Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRemoveBookID.Location = new System.Drawing.Point(197, 164);
+            this.txtRemoveBookID.Location = new System.Drawing.Point(221, 164);
             this.txtRemoveBookID.Name = "txtRemoveBookID";
             this.txtRemoveBookID.Size = new System.Drawing.Size(100, 20);
             this.txtRemoveBookID.TabIndex = 4;
@@ -99,7 +99,7 @@
             // 
             this.btnRemoveBook.BackColor = System.Drawing.Color.Teal;
             this.btnRemoveBook.ForeColor = System.Drawing.Color.LightGray;
-            this.btnRemoveBook.Location = new System.Drawing.Point(208, 237);
+            this.btnRemoveBook.Location = new System.Drawing.Point(207, 238);
             this.btnRemoveBook.Name = "btnRemoveBook";
             this.btnRemoveBook.Size = new System.Drawing.Size(75, 23);
             this.btnRemoveBook.TabIndex = 5;

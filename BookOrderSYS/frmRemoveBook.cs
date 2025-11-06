@@ -55,7 +55,8 @@ namespace BookOrderSYS
 
             if (result == DialogResult.Yes)
             {
-                MessageBox.Show("Book with ID " + txtRemoveBookID.Text + " has been removed.");
+                MessageBox.Show("Book with ID " + txtRemoveBookID.Text + " has been removed.", "Confirmation",
+                                 MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 //reset ui
                 txtRemoveBookID.Clear();
