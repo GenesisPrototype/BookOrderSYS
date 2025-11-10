@@ -35,6 +35,7 @@
             this.lblViewCustomerID = new System.Windows.Forms.Label();
             this.txtViewCustomer = new System.Windows.Forms.TextBox();
             this.btnViewCustomer = new System.Windows.Forms.Button();
+            this.lblViewCustomerDetails = new System.Windows.Forms.Label();
             this.mnuViewCustomer.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -91,7 +92,7 @@
             // txtViewCustomer
             // 
             this.txtViewCustomer.Font = new System.Drawing.Font("MS Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtViewCustomer.Location = new System.Drawing.Point(264, 145);
+            this.txtViewCustomer.Location = new System.Drawing.Point(281, 145);
             this.txtViewCustomer.Name = "txtViewCustomer";
             this.txtViewCustomer.Size = new System.Drawing.Size(70, 20);
             this.txtViewCustomer.TabIndex = 6;
@@ -100,12 +101,22 @@
             // 
             this.btnViewCustomer.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnViewCustomer.ForeColor = System.Drawing.Color.LightGray;
-            this.btnViewCustomer.Location = new System.Drawing.Point(220, 181);
+            this.btnViewCustomer.Location = new System.Drawing.Point(230, 181);
             this.btnViewCustomer.Name = "btnViewCustomer";
             this.btnViewCustomer.Size = new System.Drawing.Size(75, 23);
             this.btnViewCustomer.TabIndex = 7;
             this.btnViewCustomer.Text = "View";
             this.btnViewCustomer.UseVisualStyleBackColor = false;
+            this.btnViewCustomer.Click += new System.EventHandler(this.btnViewCustomer_Click);
+            // 
+            // lblViewCustomerDetails
+            // 
+            this.lblViewCustomerDetails.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblViewCustomerDetails.Location = new System.Drawing.Point(52, 244);
+            this.lblViewCustomerDetails.Name = "lblViewCustomerDetails";
+            this.lblViewCustomerDetails.Size = new System.Drawing.Size(457, 165);
+            this.lblViewCustomerDetails.TabIndex = 8;
+            this.lblViewCustomerDetails.Visible = false;
             // 
             // frmViewCustomer
             // 
@@ -113,6 +124,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(569, 445);
+            this.Controls.Add(this.lblViewCustomerDetails);
             this.Controls.Add(this.btnViewCustomer);
             this.Controls.Add(this.txtViewCustomer);
             this.Controls.Add(this.lblViewCustomerID);
@@ -140,5 +152,6 @@
         private System.Windows.Forms.Label lblViewCustomerID;
         private System.Windows.Forms.TextBox txtViewCustomer;
         private System.Windows.Forms.Button btnViewCustomer;
+        private System.Windows.Forms.Label lblViewCustomerDetails;
     }
 }

@@ -43,20 +43,20 @@ namespace BookOrderSYS
 
             if (!int.TryParse(txtViewOrderID.Text, out int id) || id <= 0)
             {
-                MessageBox.Show("Order ID must be a positive number.", "Invalid Info",
+                MessageBox.Show("Order ID must be a valid number.", "Invalid Info",
                                 MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
             // Simulate order details
             string details = "Order ID: " + id +
-                             "\nCustomer: Alfred Jones" +
-                             "\nDate: 04/07/2025" +
-                             "\nItems:" +
-                             "\n> Book ID: 19  |  Title: \"We'll Meet Again\"  |  Qty: 1  |  Price: €17.99" +
-                             "\n> Book ID: 248  |  Title: \"World War Z\"  |  Qty: 1  |  Price: €9.99" +
-                             "\nTotal: €27.98" +
-                             "\nStatus: Shipped";
+                             "\n\nCustomer: Alfred Jones" +
+                             "\n\nDate: 04/07/2025" +
+                             "\n\nItems:" +
+                             "\n-Book ID: 19  |  Title: \"We'll Meet Again\"  |  Qty: 1  |  Price: €17.99" +
+                             "\n-Book ID: 248  |  Title: \"World War Z\"  |  Qty: 1  |  Price: €9.99" +
+                             "\n\nTotal: €27.98" +
+                             "\n\nStatus: Shipped";
 
             lblViewOrderDetails.Text = details;
             lblViewOrderDetails.Visible = true;

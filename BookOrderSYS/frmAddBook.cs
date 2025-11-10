@@ -52,15 +52,15 @@ namespace BookOrderSYS
             //validate price n stock
             if (!decimal.TryParse(priceAsText, out decimal price) || price <= 0)
             {
-                MessageBox.Show("Please enter a valid positive number.",
+                MessageBox.Show("Please enter a valid price.",
                                 "Invalid Info",
                                 MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            if (!int.TryParse(stockAsText, out int stock) || stock <= 0)
+            if (!int.TryParse(stockAsText, out int stock) || stock < 0)
             {
-                MessageBox.Show("Please enter a valid whole number.",
+                MessageBox.Show("Please enter a valid stock number.",
                                 "Invalid Info",
                                 MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;

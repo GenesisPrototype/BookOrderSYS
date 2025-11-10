@@ -43,7 +43,7 @@ namespace BookOrderSYS
 
             if (!int.TryParse(txtCancelOrderID.Text, out int id) || id <= 0)
             {
-                MessageBox.Show("Order ID must be a positive number.", "Invalid Info",
+                MessageBox.Show("Order ID must be a valid number.", "Invalid Info",
                                 MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }

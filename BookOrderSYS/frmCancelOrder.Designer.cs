@@ -69,7 +69,7 @@
             // 
             this.lblCancelOrder.AutoSize = true;
             this.lblCancelOrder.Font = new System.Drawing.Font("MS Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCancelOrder.Location = new System.Drawing.Point(166, 45);
+            this.lblCancelOrder.Location = new System.Drawing.Point(170, 45);
             this.lblCancelOrder.Name = "lblCancelOrder";
             this.lblCancelOrder.Size = new System.Drawing.Size(141, 19);
             this.lblCancelOrder.TabIndex = 2;

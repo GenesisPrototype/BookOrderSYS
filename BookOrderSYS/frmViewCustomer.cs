@@ -36,6 +36,31 @@ namespace BookOrderSYS
 
         }
 
+        private void btnViewCustomer_Click(object sender, EventArgs e)
+        {
+            if (txtViewCustomer.Text == "")
+            {
+                MessageBox.Show("Enter the Customer ID.", "Missing Info",
+                                MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
+            if (!int.TryParse(txtViewCustomer.Text, out int id) || id <= 0)
+            {
+                MessageBox.Show("Customer ID must be a valid number.", "Invalid Info",
+                                MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Simulate order details
+            string details = "Customer ID: " + id +
+                             "\n\nName: Alfred Jones" +
+                             "\n\nEmail: alfredosauce@gmail.com" +
+                             "\n\nPhone: 0867483957" +
+                             "\n\nOrders placed: 7";
+
+            lblViewCustomerDetails.Text = details;
+            lblViewCustomerDetails.Visible = true;
+        }
     }
 }

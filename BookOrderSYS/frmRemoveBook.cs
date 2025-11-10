@@ -44,7 +44,7 @@ namespace BookOrderSYS
 
             if (!int.TryParse(txtRemoveBookID.Text, out int id) || id <= 0)
             {
-                MessageBox.Show("Book ID must be a positive number.", "Invalid Info",
+                MessageBox.Show("Please enter a valid number.", "Invalid Info",
                                 MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }

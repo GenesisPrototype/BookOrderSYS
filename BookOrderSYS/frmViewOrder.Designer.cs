@@ -110,9 +110,10 @@
             // 
             // lblViewOrderDetails
             // 
-            this.lblViewOrderDetails.Location = new System.Drawing.Point(63, 256);
+            this.lblViewOrderDetails.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblViewOrderDetails.Location = new System.Drawing.Point(63, 218);
             this.lblViewOrderDetails.Name = "lblViewOrderDetails";
-            this.lblViewOrderDetails.Size = new System.Drawing.Size(453, 167);
+            this.lblViewOrderDetails.Size = new System.Drawing.Size(453, 217);
             this.lblViewOrderDetails.TabIndex = 7;
             this.lblViewOrderDetails.Visible = false;
             // 
@@ -121,7 +122,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(569, 445);
+            this.ClientSize = new System.Drawing.Size(569, 458);
             this.Controls.Add(this.lblViewOrderDetails);
             this.Controls.Add(this.btnViewOrder);
             this.Controls.Add(this.txtViewOrderID);
