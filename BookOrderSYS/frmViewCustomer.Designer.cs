@@ -30,11 +30,12 @@
         {
             this.mnuViewCustomerBack = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuViewCustomer = new System.Windows.Forms.MenuStrip();
-            this.dgvViewCustomer = new System.Windows.Forms.DataGridView();
-            this.grpViewCustomer = new System.Windows.Forms.GroupBox();
+            this.lblViewCustomer = new System.Windows.Forms.Label();
+            this.lblViewCustomerInstuction = new System.Windows.Forms.Label();
+            this.lblViewCustomerID = new System.Windows.Forms.Label();
+            this.txtViewCustomer = new System.Windows.Forms.TextBox();
+            this.btnViewCustomer = new System.Windows.Forms.Button();
             this.mnuViewCustomer.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvViewCustomer)).BeginInit();
-            this.grpViewCustomer.SuspendLayout();
             this.SuspendLayout();
             // 
             // mnuViewCustomerBack
@@ -54,41 +55,69 @@
             this.mnuViewCustomerBack});
             this.mnuViewCustomer.Location = new System.Drawing.Point(0, 0);
             this.mnuViewCustomer.Name = "mnuViewCustomer";
-            this.mnuViewCustomer.Size = new System.Drawing.Size(626, 24);
+            this.mnuViewCustomer.Size = new System.Drawing.Size(569, 24);
             this.mnuViewCustomer.TabIndex = 1;
             // 
-            // dgvViewCustomer
+            // lblViewCustomer
             // 
-            this.dgvViewCustomer.AllowUserToAddRows = false;
-            this.dgvViewCustomer.AllowUserToDeleteRows = false;
-            this.dgvViewCustomer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvViewCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvViewCustomer.Location = new System.Drawing.Point(19, 21);
-            this.dgvViewCustomer.Name = "dgvViewCustomer";
-            this.dgvViewCustomer.ReadOnly = true;
-            this.dgvViewCustomer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvViewCustomer.Size = new System.Drawing.Size(535, 323);
-            this.dgvViewCustomer.TabIndex = 0;
-            this.dgvViewCustomer.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvViewCustomer_CellContentClick);
+            this.lblViewCustomer.AutoSize = true;
+            this.lblViewCustomer.Font = new System.Drawing.Font("MS Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblViewCustomer.Location = new System.Drawing.Point(199, 47);
+            this.lblViewCustomer.Name = "lblViewCustomer";
+            this.lblViewCustomer.Size = new System.Drawing.Size(152, 19);
+            this.lblViewCustomer.TabIndex = 2;
+            this.lblViewCustomer.Text = "View Customer";
             // 
-            // grpViewCustomer
+            // lblViewCustomerInstuction
             // 
-            this.grpViewCustomer.Controls.Add(this.dgvViewCustomer);
-            this.grpViewCustomer.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpViewCustomer.Location = new System.Drawing.Point(27, 48);
-            this.grpViewCustomer.Name = "grpViewCustomer";
-            this.grpViewCustomer.Size = new System.Drawing.Size(572, 361);
-            this.grpViewCustomer.TabIndex = 0;
-            this.grpViewCustomer.TabStop = false;
-            this.grpViewCustomer.Text = "Customer Details";
+            this.lblViewCustomerInstuction.AutoSize = true;
+            this.lblViewCustomerInstuction.Font = new System.Drawing.Font("MS Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblViewCustomerInstuction.Location = new System.Drawing.Point(90, 78);
+            this.lblViewCustomerInstuction.Name = "lblViewCustomerInstuction";
+            this.lblViewCustomerInstuction.Size = new System.Drawing.Size(378, 13);
+            this.lblViewCustomerInstuction.TabIndex = 4;
+            this.lblViewCustomerInstuction.Text = "Enter the Customer ID to view the customer\'s details.";
+            // 
+            // lblViewCustomerID
+            // 
+            this.lblViewCustomerID.AutoSize = true;
+            this.lblViewCustomerID.Font = new System.Drawing.Font("MS Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblViewCustomerID.Location = new System.Drawing.Point(174, 148);
+            this.lblViewCustomerID.Name = "lblViewCustomerID";
+            this.lblViewCustomerID.Size = new System.Drawing.Size(84, 13);
+            this.lblViewCustomerID.TabIndex = 5;
+            this.lblViewCustomerID.Text = "Customer ID";
+            // 
+            // txtViewCustomer
+            // 
+            this.txtViewCustomer.Font = new System.Drawing.Font("MS Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtViewCustomer.Location = new System.Drawing.Point(264, 145);
+            this.txtViewCustomer.Name = "txtViewCustomer";
+            this.txtViewCustomer.Size = new System.Drawing.Size(70, 20);
+            this.txtViewCustomer.TabIndex = 6;
+            // 
+            // btnViewCustomer
+            // 
+            this.btnViewCustomer.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnViewCustomer.ForeColor = System.Drawing.Color.LightGray;
+            this.btnViewCustomer.Location = new System.Drawing.Point(220, 181);
+            this.btnViewCustomer.Name = "btnViewCustomer";
+            this.btnViewCustomer.Size = new System.Drawing.Size(75, 23);
+            this.btnViewCustomer.TabIndex = 7;
+            this.btnViewCustomer.Text = "View";
+            this.btnViewCustomer.UseVisualStyleBackColor = false;
             // 
             // frmViewCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(626, 434);
-            this.Controls.Add(this.grpViewCustomer);
+            this.ClientSize = new System.Drawing.Size(569, 445);
+            this.Controls.Add(this.btnViewCustomer);
+            this.Controls.Add(this.txtViewCustomer);
+            this.Controls.Add(this.lblViewCustomerID);
+            this.Controls.Add(this.lblViewCustomerInstuction);
+            this.Controls.Add(this.lblViewCustomer);
             this.Controls.Add(this.mnuViewCustomer);
             this.MainMenuStrip = this.mnuViewCustomer;
             this.Name = "frmViewCustomer";
@@ -97,8 +126,6 @@
             this.Load += new System.EventHandler(this.frmViewCustomer_Load);
             this.mnuViewCustomer.ResumeLayout(false);
             this.mnuViewCustomer.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvViewCustomer)).EndInit();
-            this.grpViewCustomer.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -108,7 +135,10 @@
 
         private System.Windows.Forms.ToolStripMenuItem mnuViewCustomerBack;
         private System.Windows.Forms.MenuStrip mnuViewCustomer;
-        private System.Windows.Forms.DataGridView dgvViewCustomer;
-        private System.Windows.Forms.GroupBox grpViewCustomer;
+        private System.Windows.Forms.Label lblViewCustomer;
+        private System.Windows.Forms.Label lblViewCustomerInstuction;
+        private System.Windows.Forms.Label lblViewCustomerID;
+        private System.Windows.Forms.TextBox txtViewCustomer;
+        private System.Windows.Forms.Button btnViewCustomer;
     }
 }
