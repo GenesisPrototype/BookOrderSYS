@@ -91,6 +91,13 @@ namespace BookOrderSYS
 
             if (txtOrders.Text != "")
             {
+                if (!int.TryParse(txtOrders.Text, out int totalOrders) || totalOrders < 0)
+                {
+                    MessageBox.Show("Please enter a valid number of orders placed.", "Invalid Info",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
                 message += "\nTotal Orders: " + txtOrders.Text;
             }
 

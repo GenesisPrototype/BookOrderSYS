@@ -108,5 +108,12 @@ namespace BookOrderSYS
             nextForm.Show();
             this.Hide();
         }
+
+        private void createOrderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCreateOrder nextForm = new frmCreateOrder(this);
+            nextForm.Show();
+            this.Hide();
+        }
     }
 }

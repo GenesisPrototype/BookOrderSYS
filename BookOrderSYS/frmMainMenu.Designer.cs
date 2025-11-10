@@ -81,21 +81,21 @@
             // mnuAddBook
             // 
             this.mnuAddBook.Name = "mnuAddBook";
-            this.mnuAddBook.Size = new System.Drawing.Size(180, 22);
+            this.mnuAddBook.Size = new System.Drawing.Size(136, 22);
             this.mnuAddBook.Text = "Add Book";
             this.mnuAddBook.Click += new System.EventHandler(this.mnuAddBook_Click);
             // 
             // updateBookToolStripMenuItem
             // 
             this.updateBookToolStripMenuItem.Name = "updateBookToolStripMenuItem";
-            this.updateBookToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.updateBookToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.updateBookToolStripMenuItem.Text = "Update Book";
             this.updateBookToolStripMenuItem.Click += new System.EventHandler(this.updateBookToolStripMenuItem_Click);
             // 
             // removeBookToolStripMenuItem
             // 
             this.removeBookToolStripMenuItem.Name = "removeBookToolStripMenuItem";
-            this.removeBookToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.removeBookToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.removeBookToolStripMenuItem.Text = "Remove Book";
             this.removeBookToolStripMenuItem.Click += new System.EventHandler(this.removeBookToolStripMenuItem_Click);
             // 
@@ -113,14 +113,14 @@
             // mnuViewCustomer
             // 
             this.mnuViewCustomer.Name = "mnuViewCustomer";
-            this.mnuViewCustomer.Size = new System.Drawing.Size(180, 22);
+            this.mnuViewCustomer.Size = new System.Drawing.Size(160, 22);
             this.mnuViewCustomer.Text = "View Customer";
             this.mnuViewCustomer.Click += new System.EventHandler(this.addCusToolStripMenuItem_Click);
             // 
             // mnuUpdateCustomer
             // 
             this.mnuUpdateCustomer.Name = "mnuUpdateCustomer";
-            this.mnuUpdateCustomer.Size = new System.Drawing.Size(180, 22);
+            this.mnuUpdateCustomer.Size = new System.Drawing.Size(160, 22);
             this.mnuUpdateCustomer.Text = "Update Customer";
             this.mnuUpdateCustomer.Click += new System.EventHandler(this.updateCustomerToolStripMenuItem_Click);
             // 
@@ -141,6 +141,7 @@
             this.createOrderToolStripMenuItem.Name = "createOrderToolStripMenuItem";
             this.createOrderToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.createOrderToolStripMenuItem.Text = "Create Order";
+            this.createOrderToolStripMenuItem.Click += new System.EventHandler(this.createOrderToolStripMenuItem_Click);
             // 
             // cancelToolStripMenuItem
             // 

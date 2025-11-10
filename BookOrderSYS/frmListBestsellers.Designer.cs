@@ -39,7 +39,7 @@
             // 
             this.lblListBestsellers.AutoSize = true;
             this.lblListBestsellers.Font = new System.Drawing.Font("MS Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblListBestsellers.Location = new System.Drawing.Point(151, 59);
+            this.lblListBestsellers.Location = new System.Drawing.Point(130, 57);
             this.lblListBestsellers.Name = "lblListBestsellers";
             this.lblListBestsellers.Size = new System.Drawing.Size(334, 21);
             this.lblListBestsellers.TabIndex = 0;
@@ -52,8 +52,9 @@
             this.listBoxListBestsellers.ItemHeight = 15;
             this.listBoxListBestsellers.Location = new System.Drawing.Point(49, 95);
             this.listBoxListBestsellers.Name = "listBoxListBestsellers";
-            this.listBoxListBestsellers.Size = new System.Drawing.Size(528, 304);
+            this.listBoxListBestsellers.Size = new System.Drawing.Size(495, 259);
             this.listBoxListBestsellers.TabIndex = 1;
+            this.listBoxListBestsellers.SelectedIndexChanged += new System.EventHandler(this.listBoxListBestsellers_SelectedIndexChanged);
             // 
             // mnuListBestsellers
             // 
@@ -62,7 +63,7 @@
             this.mnuListBestsellersBack});
             this.mnuListBestsellers.Location = new System.Drawing.Point(0, 0);
             this.mnuListBestsellers.Name = "mnuListBestsellers";
-            this.mnuListBestsellers.Size = new System.Drawing.Size(627, 24);
+            this.mnuListBestsellers.Size = new System.Drawing.Size(594, 24);
             this.mnuListBestsellers.TabIndex = 2;
             this.mnuListBestsellers.Text = "menuStrip1";
             // 
@@ -80,7 +81,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(627, 448);
+            this.ClientSize = new System.Drawing.Size(594, 405);
             this.Controls.Add(this.listBoxListBestsellers);
             this.Controls.Add(this.lblListBestsellers);
             this.Controls.Add(this.mnuListBestsellers);

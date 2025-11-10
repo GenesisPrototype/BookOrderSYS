@@ -82,11 +82,26 @@ namespace BookOrderSYS
 
             if (txtUpdateBookPrice.Text != "")
             {
+                if (!decimal.TryParse(txtUpdateBookPrice.Text, out decimal price) || price <= 0)
+                {
+                    MessageBox.Show("Please enter a valid price.",
+                                    "Invalid Info",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
                 message += "\nPhone: " + txtUpdateBookPrice.Text;
             }
 
             if (txtUpdateBookStock.Text != "")
             {
+                if (!int.TryParse(txtUpdateBookStock.Text, out int stock) || stock < 0)
+                {
+                    MessageBox.Show("Please enter a valid stock number.", "Invalid Info",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
                 message += "\nTotal Orders: " + txtUpdateBookStock.Text;
             }
 

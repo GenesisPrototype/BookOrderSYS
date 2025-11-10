@@ -43,5 +43,10 @@ namespace BookOrderSYS
             this.Close();
             parent.Show();
         }
+
+        private void listBoxListBestsellers_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

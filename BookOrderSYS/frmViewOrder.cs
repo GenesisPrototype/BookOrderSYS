@@ -50,7 +50,7 @@ namespace BookOrderSYS
 
             // Simulate order details
             string details = "Order ID: " + id +
-                             "\n\nCustomer: Alfred Jones" +
+                             "\n\nCustomer name: Alfred Jones" +
                              "\n\nDate: 04/07/2025" +
                              "\n\nItems:" +
                              "\n-Book ID: 19  |  Title: \"We'll Meet Again\"  |  Qty: 1  |  Price: €17.99" +

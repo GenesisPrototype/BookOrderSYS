@@ -74,7 +74,7 @@
             this.lblYearlyRevenueAnalysis.AutoSize = true;
             this.lblYearlyRevenueAnalysis.Font = new System.Drawing.Font("MS Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblYearlyRevenueAnalysis.ForeColor = System.Drawing.Color.Black;
-            this.lblYearlyRevenueAnalysis.Location = new System.Drawing.Point(195, 51);
+            this.lblYearlyRevenueAnalysis.Location = new System.Drawing.Point(206, 51);
             this.lblYearlyRevenueAnalysis.Name = "lblYearlyRevenueAnalysis";
             this.lblYearlyRevenueAnalysis.Size = new System.Drawing.Size(223, 16);
             this.lblYearlyRevenueAnalysis.TabIndex = 2;
