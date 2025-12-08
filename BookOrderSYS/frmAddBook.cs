@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace BookOrderSYS
 {
@@ -43,18 +44,26 @@ namespace BookOrderSYS
             if (string.IsNullOrWhiteSpace(title) || string.IsNullOrWhiteSpace(author) ||
                     string.IsNullOrWhiteSpace(priceAsText) || string.IsNullOrWhiteSpace(stockAsText))
             {
-                MessageBox.Show("Please fill in all fields.",
-                                "Missing Info", 
+                MessageBox.Show("Please fill in all fields.", "Missing Info", 
                                 MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            //validate author's name
+            if (author.Any(char.IsDigit))
+            {
+                MessageBox.Show("Author's name cannot contain numbers.", "Invalid Info",
+                                MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtAuthor.Focus();
                 return;
             }
 
             //validate price n stock
             if (!decimal.TryParse(priceAsText, out decimal price) || price <= 0)
             {
-                MessageBox.Show("Please enter a valid price.",
-                                "Invalid Info",
+                MessageBox.Show("Please enter a valid price.", "Invalid Info",
                                 MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtPrice.Focus();
                 return;
             }
 
@@ -63,6 +72,7 @@ namespace BookOrderSYS
                 MessageBox.Show("Please enter a valid stock number.",
                                 "Invalid Info",
                                 MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtStock.Focus();
                 return;
             }
 

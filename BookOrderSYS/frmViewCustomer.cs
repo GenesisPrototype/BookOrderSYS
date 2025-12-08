@@ -52,12 +52,11 @@ namespace BookOrderSYS
                 return;
             }
 
-            // Simulate order details
+            //hardcoded customer details
             string details = "Customer ID: " + id +
                              "\n\nName: Alfred Jones" +
                              "\n\nEmail: alfredosauce@gmail.com" +
-                             "\n\nPhone: 0867483957" +
-                             "\n\nOrders placed: 7";
+                             "\n\nPhone: 0867483957";
 
             lblViewCustomerDetails.Text = details;
             lblViewCustomerDetails.Visible = true;

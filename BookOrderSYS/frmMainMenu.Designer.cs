@@ -47,6 +47,7 @@
             this.listBestsellersToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.lblBooktopia = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.addCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuMainMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -102,6 +103,7 @@
             // mnuCustomers
             // 
             this.mnuCustomers.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addCustomerToolStripMenuItem,
             this.mnuViewCustomer,
             this.mnuUpdateCustomer});
             this.mnuCustomers.Font = new System.Drawing.Font("MS Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -113,14 +115,14 @@
             // mnuViewCustomer
             // 
             this.mnuViewCustomer.Name = "mnuViewCustomer";
-            this.mnuViewCustomer.Size = new System.Drawing.Size(160, 22);
+            this.mnuViewCustomer.Size = new System.Drawing.Size(180, 22);
             this.mnuViewCustomer.Text = "View Customer";
             this.mnuViewCustomer.Click += new System.EventHandler(this.addCusToolStripMenuItem_Click);
             // 
             // mnuUpdateCustomer
             // 
             this.mnuUpdateCustomer.Name = "mnuUpdateCustomer";
-            this.mnuUpdateCustomer.Size = new System.Drawing.Size(160, 22);
+            this.mnuUpdateCustomer.Size = new System.Drawing.Size(180, 22);
             this.mnuUpdateCustomer.Text = "Update Customer";
             this.mnuUpdateCustomer.Click += new System.EventHandler(this.updateCustomerToolStripMenuItem_Click);
             // 
@@ -139,21 +141,21 @@
             // createOrderToolStripMenuItem
             // 
             this.createOrderToolStripMenuItem.Name = "createOrderToolStripMenuItem";
-            this.createOrderToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.createOrderToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.createOrderToolStripMenuItem.Text = "Create Order";
             this.createOrderToolStripMenuItem.Click += new System.EventHandler(this.createOrderToolStripMenuItem_Click);
             // 
             // cancelToolStripMenuItem
             // 
             this.cancelToolStripMenuItem.Name = "cancelToolStripMenuItem";
-            this.cancelToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cancelToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.cancelToolStripMenuItem.Text = "Cancel Order";
             this.cancelToolStripMenuItem.Click += new System.EventHandler(this.cancelToolStripMenuItem_Click);
             // 
             // cancelOrderToolStripMenuItem
             // 
             this.cancelOrderToolStripMenuItem.Name = "cancelOrderToolStripMenuItem";
-            this.cancelOrderToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cancelOrderToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.cancelOrderToolStripMenuItem.Text = "View Order";
             this.cancelOrderToolStripMenuItem.Click += new System.EventHandler(this.cancelOrderToolStripMenuItem_Click);
             // 
@@ -216,6 +218,13 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // addCustomerToolStripMenuItem
+            // 
+            this.addCustomerToolStripMenuItem.Name = "addCustomerToolStripMenuItem";
+            this.addCustomerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addCustomerToolStripMenuItem.Text = "Add Customer";
+            this.addCustomerToolStripMenuItem.Click += new System.EventHandler(this.addCustomerToolStripMenuItem_Click);
+            // 
             // frmMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 11F);
@@ -258,6 +267,7 @@
         private System.Windows.Forms.ToolStripMenuItem listBestsellersToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listBestsellersToolStripMenuItem1;
         private System.Windows.Forms.Label lblBooktopia;
+        private System.Windows.Forms.ToolStripMenuItem addCustomerToolStripMenuItem;
     }
 }
 

@@ -115,5 +115,12 @@ namespace BookOrderSYS
             nextForm.Show();
             this.Hide();
         }
+
+        private void addCustomerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAddCustomer nextForm = new frmAddCustomer(this);
+            nextForm.Show();
+            this.Hide();
+        }
     }
 }

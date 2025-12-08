@@ -7,64 +7,40 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Xml.Linq;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace BookOrderSYS
 {
-    public partial class frmUpdateCustomer : Form
+    public partial class frmAddCustomer : Form
     {
         frmMainMenu parent;
-        public frmUpdateCustomer()
+        public frmAddCustomer()
         {
             InitializeComponent();
         }
 
-        public frmUpdateCustomer(frmMainMenu parent)
+        public frmAddCustomer(frmMainMenu parent)
         {
             InitializeComponent();
             this.parent = parent;
 
         }
 
-        private void mnuUpdateCustomerBack_Click(object sender, EventArgs e)
+
+
+        private void frmAddCustomer_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mnuAddCustomerBack_Click(object sender, EventArgs e)
         {
             this.Close();
             parent.Visible = true;
         }
 
-        private void frmUpdateCustomer_Load(object sender, EventArgs e)
+        private void btnAddCustomer_Click(object sender, EventArgs e)
         {
-            txtName.Enabled = false;
-            txtEmail.Enabled = false;
-            txtPhone.Enabled = false;
-            btnUpdateCustomer.Enabled = false;
-        }
-
-        private void txtID_TextChanged(object sender, EventArgs e)
-        {
-            int id;
-
-            if (int.TryParse(txtID.Text, out id) && id > 0)
-            {
-                // Enable fields if ID is a positive number
-                txtName.Enabled = true;
-                txtEmail.Enabled = true;
-                txtPhone.Enabled = true;
-                btnUpdateCustomer.Enabled = true;
-            }
-            else
-            {
-                txtName.Enabled = false;
-                txtEmail.Enabled = false;
-                txtPhone.Enabled = false;
-                btnUpdateCustomer.Enabled = false;
-            }
-        }
-
-        private void btnUpdateCustomer_Click(object sender, EventArgs e)
-        {
-            string id = txtID.Text;
             string name = txtName.Text;
             string email = txtEmail.Text;
             string phone = txtPhone.Text;
@@ -90,7 +66,7 @@ namespace BookOrderSYS
             //validate email
             if (string.IsNullOrEmpty(email) || !email.Contains("@") || !email.Contains("."))
             {
-                MessageBox.Show("Please enter a valid email address.", "Validation Error",
+                MessageBox.Show("Please enter a valid email address.", "Validation Error", 
                                 MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtEmail.Focus();
                 return;
@@ -105,10 +81,11 @@ namespace BookOrderSYS
                 return;
             }
 
-            //confirmation message with the updated deets
-            string message = "Customer updated! \n\n\n" +
-                "Updated details:\n\nID: " + id +
-                "Name: " + name +
+            //would save data - but not doing this now
+
+            //confirmation message
+            string message = "Customer added successfully!\n\n" +
+                 "\nName: " + name +
                  "\nEmail: " + email +
                  "\nPhone: " + phone;
 
@@ -116,14 +93,9 @@ namespace BookOrderSYS
                             MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             //reset UI
-            txtID.Clear();
             txtName.Clear();
             txtEmail.Clear();
             txtPhone.Clear();
-
-
-
-
         }
     }
 }

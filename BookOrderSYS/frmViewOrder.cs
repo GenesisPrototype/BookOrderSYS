@@ -48,7 +48,7 @@ namespace BookOrderSYS
                 return;
             }
 
-            // Simulate order details
+            //hardcoded order details
             string details = "Order ID: " + id +
                              "\n\nCustomer name: Alfred Jones" +
                              "\n\nDate: 04/07/2025" +

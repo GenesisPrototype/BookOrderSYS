@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace BookOrderSYS
 {
@@ -66,46 +67,59 @@ namespace BookOrderSYS
 
         private void btnUpdateBook_Click(object sender, EventArgs e)
         {
+            string id = txtUpdateBookID.Text;
+            string title = txtUpdateBookTitle.Text;
+            string author = txtUpdateBookAuthor.Text;
+            string priceAsText = txtUpdateBookPrice.Text;
+            string stockAsText = txtUpdateBookStock.Text;
 
-            //validate
-            string message = "Book updated! \n\n\nUpdated details:\n\nID: " + txtUpdateBookID.Text;
-
-            if (txtUpdateBookTitle.Text != "")
+            
+            //check if the fields were left empty
+            if (string.IsNullOrWhiteSpace(title) || string.IsNullOrWhiteSpace(author) || string.IsNullOrWhiteSpace(priceAsText)
+                || string.IsNullOrWhiteSpace(stockAsText))
             {
-                message += "\nName: " + txtUpdateBookTitle.Text;
+                MessageBox.Show("Please fill in all fields.", "Missing Info",
+                                MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
 
-            if (txtUpdateBookAuthor.Text != "")
+            //validate author's name
+            if (author.Any(char.IsDigit))
             {
-                message += "\nEmail: " + txtUpdateBookAuthor.Text;
+                MessageBox.Show("Author's name cannot contain numbers.", "Invalid Info",
+                                MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtUpdateBookAuthor.Focus();
+                return;
             }
 
-            if (txtUpdateBookPrice.Text != "")
+            //validate price
+            if (!decimal.TryParse(priceAsText, out decimal price) || price <= 0)
             {
-                if (!decimal.TryParse(txtUpdateBookPrice.Text, out decimal price) || price <= 0)
-                {
-                    MessageBox.Show("Please enter a valid price.",
-                                    "Invalid Info",
-                                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
+                MessageBox.Show("Please enter a valid price.", "Invalid Info",
+                                 MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtUpdateBookPrice.Focus();
+                return;
+            }
+ 
+            //validate stock qty
+            if (!int.TryParse(stockAsText, out int stock) || stock < 0)
+            {
 
-                message += "\nPhone: " + txtUpdateBookPrice.Text;
+                MessageBox.Show("Please enter a valid stock number.", "Invalid Info",
+                                 MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtUpdateBookStock.Focus();
+                return;
             }
 
-            if (txtUpdateBookStock.Text != "")
-            {
-                if (!int.TryParse(txtUpdateBookStock.Text, out int stock) || stock < 0)
-                {
-                    MessageBox.Show("Please enter a valid stock number.", "Invalid Info",
-                                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
 
-                message += "\nTotal Orders: " + txtUpdateBookStock.Text;
-            }
+            //confirmation message with the updated details
+            string message = "Book updated! \n\n\nUpdated details:" +
+                "\n\nID: " + id +
+                "\nTitle: " + title +
+                "\nAuthor: " + author + 
+                "\nPrice: " + priceAsText + 
+                "\nQty: " + stockAsText;
 
-            //confirmation message with the updated deets
             MessageBox.Show(message, "Confirmation",
                             MessageBoxButtons.OK, MessageBoxIcon.Information);
 

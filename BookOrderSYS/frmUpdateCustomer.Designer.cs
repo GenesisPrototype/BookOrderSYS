@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.mnuUpdateCustomer = new System.Windows.Forms.MenuStrip();
             this.mnuUpdateCustomerBack = new System.Windows.Forms.ToolStripMenuItem();
             this.lblUpdateCustomer = new System.Windows.Forms.Label();
@@ -35,14 +36,13 @@
             this.lblName = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblPhone = new System.Windows.Forms.Label();
-            this.lblOrdersPlaced = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtPhone = new System.Windows.Forms.TextBox();
-            this.txtOrders = new System.Windows.Forms.TextBox();
             this.lblInstruction = new System.Windows.Forms.Label();
             this.btnUpdateCustomer = new System.Windows.Forms.Button();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.mnuUpdateCustomer.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -115,16 +115,6 @@
             this.lblPhone.TabIndex = 5;
             this.lblPhone.Text = "Phone";
             // 
-            // lblOrdersPlaced
-            // 
-            this.lblOrdersPlaced.AutoSize = true;
-            this.lblOrdersPlaced.Font = new System.Drawing.Font("MS Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOrdersPlaced.Location = new System.Drawing.Point(229, 362);
-            this.lblOrdersPlaced.Name = "lblOrdersPlaced";
-            this.lblOrdersPlaced.Size = new System.Drawing.Size(98, 13);
-            this.lblOrdersPlaced.TabIndex = 6;
-            this.lblOrdersPlaced.Text = "Orders Placed";
-            // 
             // txtID
             // 
             this.txtID.Font = new System.Drawing.Font("MS Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -158,13 +148,6 @@
             this.txtPhone.Size = new System.Drawing.Size(158, 20);
             this.txtPhone.TabIndex = 10;
             // 
-            // txtOrders
-            // 
-            this.txtOrders.Location = new System.Drawing.Point(232, 378);
-            this.txtOrders.Name = "txtOrders";
-            this.txtOrders.Size = new System.Drawing.Size(45, 20);
-            this.txtOrders.TabIndex = 11;
-            // 
             // lblInstruction
             // 
             this.lblInstruction.AutoSize = true;
@@ -180,13 +163,18 @@
             this.btnUpdateCustomer.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnUpdateCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdateCustomer.ForeColor = System.Drawing.Color.LightGray;
-            this.btnUpdateCustomer.Location = new System.Drawing.Point(270, 439);
+            this.btnUpdateCustomer.Location = new System.Drawing.Point(270, 416);
             this.btnUpdateCustomer.Name = "btnUpdateCustomer";
             this.btnUpdateCustomer.Size = new System.Drawing.Size(80, 27);
             this.btnUpdateCustomer.TabIndex = 13;
             this.btnUpdateCustomer.Text = "Update";
             this.btnUpdateCustomer.UseVisualStyleBackColor = false;
             this.btnUpdateCustomer.Click += new System.EventHandler(this.btnUpdateCustomer_Click);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // frmUpdateCustomer
             // 
@@ -196,12 +184,10 @@
             this.ClientSize = new System.Drawing.Size(646, 517);
             this.Controls.Add(this.btnUpdateCustomer);
             this.Controls.Add(this.lblInstruction);
-            this.Controls.Add(this.txtOrders);
             this.Controls.Add(this.txtPhone);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.txtID);
-            this.Controls.Add(this.lblOrdersPlaced);
             this.Controls.Add(this.lblPhone);
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.lblName);
@@ -229,13 +215,12 @@
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblPhone;
-        private System.Windows.Forms.Label lblOrdersPlaced;
         private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtPhone;
-        private System.Windows.Forms.TextBox txtOrders;
         private System.Windows.Forms.Label lblInstruction;
         private System.Windows.Forms.Button btnUpdateCustomer;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }
